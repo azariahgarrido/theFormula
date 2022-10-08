@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
-export default function QuizOne() {
+export default function QuizThree() {
 	const questions = [
 		{
-			questionText: 'Who is the main character?',
+			questionText: 'When did Spongebob premire?',
 			answerOptions: [
-				{ answerText: 'Patrick', isCorrect: false },
-				{ answerText: 'Squidward', isCorrect: false },
-				{ answerText: 'Spongebob', isCorrect: true },
-				{ answerText: 'Mr. Krabs', isCorrect: false },
+				{ answerText: 'July 17th, 1999', isCorrect: true },
+				{ answerText: 'June 20th, 2000', isCorrect: false },
+				{ answerText: 'Febuary 20th, 1998', isCorrect: false },
+				{ answerText: 'October 16th, 1999', isCorrect: false },
 			],
 		},
 		{
@@ -57,7 +57,7 @@ export default function QuizOne() {
 		}
 	};
 	return (
-		<div className='quizOne'>
+		<div className='quizThree'>
 			{showScore ? (
 				<div className='score-section'>
 					You scored {score} out of {questions.length}
