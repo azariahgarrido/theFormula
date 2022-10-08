@@ -21,12 +21,12 @@ export default function QuizThree() {
 			],
 		},
 		{
-			questionText: 'Where does Spongebob work?',
+			questionText: 'How many seasons of Spongebob are there currently?',
 			answerOptions: [
-				{ answerText: 'Krusty Krab', isCorrect: true },
-				{ answerText: 'Chum Bucket', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Tacobell', isCorrect: false },
+				{ answerText: '12', isCorrect: false },
+				{ answerText: '13', isCorrect: true },
+				{ answerText: '15', isCorrect: false },
+				{ answerText: '19', isCorrect: false },
 			],
 		},
 		{
