@@ -3,39 +3,39 @@ import React, { useState } from 'react';
 export default function QuizTwo() {
 	const questions = [
 		{
-			questionText: 'Who is the main character?',
+			questionText: 'What is Spongebobs house?',
 			answerOptions: [
-				{ answerText: 'Patrick', isCorrect: false },
+				{ answerText: 'Tin Can', isCorrect: false },
+				{ answerText: 'A Rock', isCorrect: false },
+				{ answerText: 'A Pineapple', isCorrect: true },
+				{ answerText: 'A Shell', isCorrect: false },
+			],
+		},
+		{
+			questionText: 'Who is Mermaid Mans sidekick?',
+			answerOptions: [
+				{ answerText: 'Plankton', isCorrect: false },
+				{ answerText: 'Spongebob', isCorrect: false },
+				{ answerText: 'Barnacle Boy', isCorrect: true },
+				{ answerText: 'Larry', isCorrect: false },
+			],
+		},
+		{
+			questionText: 'What character doesnt have a nose?',
+			answerOptions: [
+				{ answerText: 'Patrick', isCorrect: true },
 				{ answerText: 'Squidward', isCorrect: false },
-				{ answerText: 'Spongebob', isCorrect: true },
-				{ answerText: 'Mr. Krabs', isCorrect: false },
+				{ answerText: 'Spongebob', isCorrect: false },
+				{ answerText: 'Mr.krabs', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'What color is Spongebob?',
+			questionText: 'Which magazine does Squidward subscribe to?',
 			answerOptions: [
-				{ answerText: 'Red', isCorrect: false },
-				{ answerText: 'Yellow', isCorrect: true },
-				{ answerText: 'Orange', isCorrect: false },
-				{ answerText: 'Green', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'Where does Spongebob work?',
-			answerOptions: [
-				{ answerText: 'Krusty Krab', isCorrect: true },
-				{ answerText: 'Chum Bucket', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Tacobell', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'What is Planktons obsession?',
-			answerOptions: [
-				{ answerText: 'Chum Sticks', isCorrect: false },
-				{ answerText: 'Making Money', isCorrect: false },
-				{ answerText: 'Krabby Patties', isCorrect: false },
-				{ answerText: 'The Secret Formula', isCorrect: true },
+				{ answerText: 'Fancy Living Digest', isCorrect: true },
+				{ answerText: 'Squid Times', isCorrect: false },
+				{ answerText: 'Krabby GQ', isCorrect: false },
+				{ answerText: 'The Jazz Room', isCorrect: false },
 			],
 		},
 	];
