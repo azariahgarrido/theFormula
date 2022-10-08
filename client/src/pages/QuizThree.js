@@ -30,12 +30,12 @@ export default function QuizThree() {
 			],
 		},
 		{
-			questionText: 'What is Planktons obsession?',
+			questionText: 'How many times is "SpongeBob SquarePants" called out during the opening theme?',
 			answerOptions: [
-				{ answerText: 'Chum Sticks', isCorrect: false },
-				{ answerText: 'Making Money', isCorrect: false },
-				{ answerText: 'Krabby Patties', isCorrect: false },
-				{ answerText: 'The Secret Formula', isCorrect: true },
+				{ answerText: '4 times', isCorrect: false },
+				{ answerText: '9 times', isCorrect: false },
+				{ answerText: '6 times', isCorrect: false },
+				{ answerText: '8 times', isCorrect: true },
 			],
 		},
 	];
