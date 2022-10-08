@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Header from './components/Header';
 import QuizOne from './pages/QuizOne';
 import QuizTwo from './pages/QuizTwo';
+import QuizTwo from './pages/QuizThree';
 
 const client = new ApolloClient({
   request: operation => {
@@ -38,6 +39,10 @@ function App() {
           <Route 
                   path="/QuizTwo" 
                   element={<QuizTwo />}
+          />
+          <Route 
+                  path="/QuizThree" 
+                  element={<QuizThree />}
           />
           </Routes>
         </Router>
