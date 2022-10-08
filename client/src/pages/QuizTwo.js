@@ -54,6 +54,7 @@ export default function QuizTwo() {
 			setCurrentQuestion(nextQuestion);
 		} else {
 			setShowScore(true);
+            // saveScore();
 		}
 	};
 	return (

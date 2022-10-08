@@ -54,6 +54,7 @@ export default function QuizOne() {
 			setCurrentQuestion(nextQuestion);
 		} else {
 			setShowScore(true);
+            // saveScore();
 		}
 	};
 	return (

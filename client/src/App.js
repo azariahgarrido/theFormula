@@ -5,6 +5,7 @@ import ApolloClient from 'apollo-boost';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 // import Homepage from './pages/Homepage';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import QuizOne from './pages/QuizOne';
 import QuizTwo from './pages/QuizTwo';
 
@@ -27,19 +28,16 @@ function App() {
         <Router>
           <Header />
           <Routes>
-          {/* <Route 
-                  path="/" 
-                  element={<Homepage />} 
-          /> */}
-          <Route 
-                  path="/QuizOne" 
-                  element={<QuizOne />}
-          />
-          <Route 
-                  path="/QuizTwo" 
-                  element={<QuizTwo />}
-          />
+            <Route 
+                    path="/QuizOne" 
+                    element={<QuizOne />}
+            />
+            <Route 
+                    path="/QuizTwo" 
+                    element={<QuizTwo />}
+            />
           </Routes>
+          <Footer />
         </Router>
       </ApolloProvider>
   );
