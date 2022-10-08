@@ -41,10 +41,15 @@ function App() {
                   path="/QuizThree" 
                   element={<QuizThree />}
           />
+          <Route
+                  path="/QuizThree" 
+                  element={<QuizFour />}
+          />
           <Route 
                   path="/QuizFour" 
-                  element={<QuizFour />}
-          />        
+                  element={<QuizThree />}
+          />
+          
           </Routes>
           <Footer />
         </Router>
