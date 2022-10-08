@@ -8,6 +8,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import QuizOne from './pages/QuizOne';
 import QuizTwo from './pages/QuizTwo';
+import QuizTwo from './pages/QuizThree';
+import QuizFour from './pages/QuizFour';
 
 const client = new ApolloClient({
   request: operation => {
@@ -28,6 +30,7 @@ function App() {
         <Router>
           <Header />
           <Routes>
+<<<<<<< HEAD
             <Route 
                     path="/QuizOne" 
                     element={<QuizOne />}
@@ -36,6 +39,30 @@ function App() {
                     path="/QuizTwo" 
                     element={<QuizTwo />}
             />
+=======
+          {/* <Route 
+                  path="/" 
+                  element={<Homepage />} 
+          /> */}
+          <Route 
+                  path="/QuizOne" 
+                  element={<QuizOne />}
+          />
+          <Route 
+                  path="/QuizTwo" 
+                  element={<QuizTwo />}
+          />
+          <Route 
+
+                  path="/QuizFour" 
+                  element={<QuizFour />}
+          />        
+
+                  path="/QuizThree" 
+                  element={<QuizThree />}
+          />
+          
+>>>>>>> eacc85dc5dc14d9fb6e6025c4513c0969814a151
           </Routes>
           <Footer />
         </Router>
