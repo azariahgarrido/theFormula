@@ -3,11 +3,11 @@ import './App.css';
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-// import Homepage from './pages/Homepage';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import QuizOne from './pages/QuizOne';
 import QuizTwo from './pages/QuizTwo';
-import QuizTwo from './pages/QuizThree';
+import QuizThree from './pages/QuizThree';
 import QuizFour from './pages/QuizFour';
 
 const client = new ApolloClient({
@@ -29,10 +29,6 @@ function App() {
         <Router>
           <Header />
           <Routes>
-          {/* <Route 
-                  path="/" 
-                  element={<Homepage />} 
-          /> */}
           <Route 
                   path="/QuizOne" 
                   element={<QuizOne />}
@@ -41,17 +37,21 @@ function App() {
                   path="/QuizTwo" 
                   element={<QuizTwo />}
           />
-          <Route 
-
-                  path="/QuizFour" 
+           <Route 
+                  path="/QuizThree" 
                   element={<QuizThree />}
-          />        
-
+          />
+          <Route
                   path="/QuizThree" 
                   element={<QuizFour />}
           />
+          <Route 
+                  path="/QuizFour" 
+                  element={<QuizThree />}
+          />
           
           </Routes>
+          <Footer />
         </Router>
       </ApolloProvider>
   );

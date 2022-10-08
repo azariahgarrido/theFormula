@@ -1,41 +1,41 @@
 import React, { useState } from 'react';
 
-export default function QuizOne() {
+export default function QuizThree() {
 	const questions = [
 		{
-			questionText: 'Who is the main character?',
+			questionText: 'When did Spongebob premire?',
 			answerOptions: [
-				{ answerText: 'Patrick', isCorrect: false },
-				{ answerText: 'Squidward', isCorrect: false },
-				{ answerText: 'Spongebob', isCorrect: true },
-				{ answerText: 'Mr. Krabs', isCorrect: false },
+				{ answerText: 'July 17th, 1999', isCorrect: true },
+				{ answerText: 'June 20th, 2000', isCorrect: false },
+				{ answerText: 'Febuary 20th, 1998', isCorrect: false },
+				{ answerText: 'October 16th, 1999', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'What color is Spongebob?',
+			questionText: 'Who is the voice actor for Spongebob?',
 			answerOptions: [
-				{ answerText: 'Red', isCorrect: false },
-				{ answerText: 'Yellow', isCorrect: true },
-				{ answerText: 'Orange', isCorrect: false },
-				{ answerText: 'Green', isCorrect: false },
+				{ answerText: 'Clancy Brown', isCorrect: false },
+				{ answerText: 'YRodger Bumpass', isCorrect: false },
+				{ answerText: 'Bill Fagerbakke', isCorrect: false },
+				{ answerText: 'Tom Kenny', isCorrect: true },
 			],
 		},
 		{
-			questionText: 'Where does Spongebob work?',
+			questionText: 'How many seasons of Spongebob are there currently?',
 			answerOptions: [
-				{ answerText: 'Krusty Krab', isCorrect: true },
-				{ answerText: 'Chum Bucket', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Tacobell', isCorrect: false },
+				{ answerText: '12', isCorrect: false },
+				{ answerText: '13', isCorrect: true },
+				{ answerText: '15', isCorrect: false },
+				{ answerText: '19', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'What is Planktons obsession?',
+			questionText: 'How many times is "SpongeBob SquarePants" called out during the opening theme?',
 			answerOptions: [
-				{ answerText: 'Chum Sticks', isCorrect: false },
-				{ answerText: 'Making Money', isCorrect: false },
-				{ answerText: 'Krabby Patties', isCorrect: false },
-				{ answerText: 'The Secret Formula', isCorrect: true },
+				{ answerText: '4 times', isCorrect: false },
+				{ answerText: '9 times', isCorrect: false },
+				{ answerText: '6 times', isCorrect: false },
+				{ answerText: '8 times', isCorrect: true },
 			],
 		},
 	];
@@ -57,7 +57,7 @@ export default function QuizOne() {
 		}
 	};
 	return (
-		<div className='quizOne'>
+		<div className='quizThree'>
 			{showScore ? (
 				<div className='score-section'>
 					You scored {score} out of {questions.length}

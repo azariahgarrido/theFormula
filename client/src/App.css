@@ -1,3 +1,17 @@
-#root {
-    background-color: blue;
+footer {
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+main {
+    background-color: red;
+}
+
+.toe {
+    max-height: 50px;
+    min-height: 50px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
 }
