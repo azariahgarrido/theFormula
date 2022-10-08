@@ -1,7 +1,7 @@
-.home {
-    background-color: red;
-    color: white;
+#root {
+    background-color: blue;
+}
+.mainHome {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
 }
