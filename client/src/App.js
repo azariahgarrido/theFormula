@@ -3,7 +3,6 @@ import './App.css';
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-// import Homepage from './pages/Homepage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import QuizOne from './pages/QuizOne';
@@ -24,72 +23,28 @@ const client = new ApolloClient({
   uri: '/graphql'
 });
 
-// function App() {
-//   return (
-//       <ApolloProvider client={client}>
-//         <Router>
-//           <Header />
-//           <Routes>
-//             <Route 
-//                     path="/QuizOne" 
-//                     element={<QuizOne />}
-//             />
-//             <Route 
-//                     path="/QuizTwo" 
-//                     element={<QuizTwo />}
-//             />
-//           {/* <Route 
-//                   path="/" 
-//                   element={<Homepage />} 
-//           /> */}
-//           <Route 
-//                   path="/QuizOne" 
-//                   element={<QuizOne />}
-//           />
-//           <Route 
-//                   path="/QuizTwo" 
-//                   element={<QuizTwo />}
-//           />
-//            <Route 
-//                   path="/QuizThree" 
-//                   element={<QuizThree />}
-//           />
-//           <Route 
-//                   path="/QuizFour" 
-//                   element={<QuizFour />}
-//           />        
-         
-        
-          
-//           </Routes>
-//           <Footer />
-//         </Router>
-//       </ApolloProvider>
-//   );
-// }
-
 function App() {
   return (
       <ApolloProvider client={client}>
         <Router>
           <Header />
           <Routes>
-            <Route 
-                    path="/QuizOne" 
-                    element={<QuizOne />}
-            />
-            <Route 
-                    path="/QuizTwo" 
-                    element={<QuizTwo />}
-            />
-            <Route 
-                    path="/QuizThree" 
-                    element={<QuizThree />}
-            />
-            <Route 
-                    path="/QuizFour" 
-                    element={<QuizFour />}
-            />
+          <Route 
+                  path="/QuizOne" 
+                  element={<QuizOne />}
+          />
+          <Route 
+                  path="/QuizTwo" 
+                  element={<QuizTwo />}
+          />
+           <Route 
+                  path="/QuizThree" 
+                  element={<QuizThree />}
+          />
+          <Route 
+                  path="/QuizFour" 
+                  element={<QuizFour />}
+          />        
           </Routes>
           <Footer />
         </Router>
