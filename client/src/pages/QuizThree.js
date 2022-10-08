@@ -12,12 +12,12 @@ export default function QuizThree() {
 			],
 		},
 		{
-			questionText: 'What color is Spongebob?',
+			questionText: 'Who is the voice actor for Spongebob?',
 			answerOptions: [
-				{ answerText: 'Red', isCorrect: false },
-				{ answerText: 'Yellow', isCorrect: true },
-				{ answerText: 'Orange', isCorrect: false },
-				{ answerText: 'Green', isCorrect: false },
+				{ answerText: 'Clancy Brown', isCorrect: false },
+				{ answerText: 'YRodger Bumpass', isCorrect: false },
+				{ answerText: 'Bill Fagerbakke', isCorrect: false },
+				{ answerText: 'Tom Kenny', isCorrect: true },
 			],
 		},
 		{
