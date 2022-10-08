@@ -38,6 +38,24 @@ export default function QuizTwo() {
 				{ answerText: 'The Jazz Room', isCorrect: false },
 			],
 		},
+        {
+			questionText: 'Who went to college with Flats the Flounder?',
+			answerOptions: [
+				{ answerText: 'SpongeBob', isCorrect: false },
+				{ answerText: 'Patrick', isCorrect: true },
+				{ answerText: 'Mr.Krabs', isCorrect: false },
+				{ answerText: 'Plankton', isCorrect: false },
+			],
+		},
+        {
+			questionText: 'Who is Karen?',
+			answerOptions: [
+				{ answerText: 'Planktons Wife', isCorrect: true },
+				{ answerText: 'Spongebobs Mom', isCorrect: false },
+				{ answerText: 'Squidwards Friend', isCorrect: false },
+				{ answerText: 'Patricks Dad ', isCorrect: false },
+			],
+		},
 	];
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
