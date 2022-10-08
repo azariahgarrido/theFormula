@@ -17,6 +17,10 @@ export default function Header() {
         navigate('/QuizFour');
     };
 
+    const navigateToMakeQuiz = () => {
+        navigate('/MakeQuiz');
+    }
+
     return(
         <main>
             <div>
@@ -26,7 +30,7 @@ export default function Header() {
                 <button className = "home" onClick={navigateToQuizFour}>Quiz Four</button>
             </div>
             <div>
-                <button>Make your own Quiz</button>
+                <button onClick={navigateToMakeQuiz}>Make your own Quiz</button>
             </div>
         </main>
     )
