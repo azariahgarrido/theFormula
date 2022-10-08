@@ -24,13 +24,56 @@ const client = new ApolloClient({
   uri: '/graphql'
 });
 
+// function App() {
+//   return (
+//       <ApolloProvider client={client}>
+//         <Router>
+//           <Header />
+//           <Routes>
+//             <Route 
+//                     path="/QuizOne" 
+//                     element={<QuizOne />}
+//             />
+//             <Route 
+//                     path="/QuizTwo" 
+//                     element={<QuizTwo />}
+//             />
+//           {/* <Route 
+//                   path="/" 
+//                   element={<Homepage />} 
+//           /> */}
+//           <Route 
+//                   path="/QuizOne" 
+//                   element={<QuizOne />}
+//           />
+//           <Route 
+//                   path="/QuizTwo" 
+//                   element={<QuizTwo />}
+//           />
+//            <Route 
+//                   path="/QuizThree" 
+//                   element={<QuizThree />}
+//           />
+//           <Route 
+//                   path="/QuizFour" 
+//                   element={<QuizFour />}
+//           />        
+         
+        
+          
+//           </Routes>
+//           <Footer />
+//         </Router>
+//       </ApolloProvider>
+//   );
+// }
+
 function App() {
   return (
       <ApolloProvider client={client}>
         <Router>
           <Header />
           <Routes>
-<<<<<<< HEAD
             <Route 
                     path="/QuizOne" 
                     element={<QuizOne />}
@@ -39,31 +82,14 @@ function App() {
                     path="/QuizTwo" 
                     element={<QuizTwo />}
             />
-=======
-          {/* <Route 
-                  path="/" 
-                  element={<Homepage />} 
-          /> */}
-          <Route 
-                  path="/QuizOne" 
-                  element={<QuizOne />}
-          />
-          <Route 
-                  path="/QuizTwo" 
-                  element={<QuizTwo />}
-          />
-           <Route 
-                  path="/QuizThree" 
-                  element={<QuizThree />}
-          />
-          <Route 
-                  path="/QuizFour" 
-                  element={<QuizFour />}
-          />        
-         
-        
-          
->>>>>>> eacc85dc5dc14d9fb6e6025c4513c0969814a151
+            <Route 
+                    path="/QuizThree" 
+                    element={<QuizThree />}
+            />
+            <Route 
+                    path="/QuizFour" 
+                    element={<QuizFour />}
+            />
           </Routes>
           <Footer />
         </Router>
