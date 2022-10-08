@@ -30,16 +30,6 @@ function App() {
         <Router>
           <Header />
           <Routes>
-<<<<<<< HEAD
-            <Route 
-                    path="/QuizOne" 
-                    element={<QuizOne />}
-            />
-            <Route 
-                    path="/QuizTwo" 
-                    element={<QuizTwo />}
-            />
-=======
           {/* <Route 
                   path="/" 
                   element={<Homepage />} 
@@ -63,7 +53,6 @@ function App() {
          
         
           
->>>>>>> eacc85dc5dc14d9fb6e6025c4513c0969814a151
           </Routes>
           <Footer />
         </Router>
