@@ -38,6 +38,24 @@ export default function QuizOne() {
 				{ answerText: 'The Secret Formula', isCorrect: true },
 			],
 		},
+		{
+			questionText: 'Where does Mr.Krabs keep his money?',
+			answerOptions: [
+				{ answerText: 'His Matress', isCorrect: true },
+				{ answerText: 'The Bank', isCorrect: false },
+				{ answerText: 'The Chum Bucket', isCorrect: false },
+				{ answerText: 'The Krusty Krab', isCorrect: false },
+			],
+		},
+		{
+			questionText: 'What does spongebob do for fun?',
+			answerOptions: [
+				{ answerText: 'Running', isCorrect: false },
+				{ answerText: 'Swimming', isCorrect: false },
+				{ answerText: 'Cleans The House', isCorrect: false },
+				{ answerText: 'Go Jelly Fishing', isCorrect: true },
+			],
+		},
 	];
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
