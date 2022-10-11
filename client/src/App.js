@@ -10,6 +10,7 @@ import QuizTwo from './pages/QuizTwo';
 import QuizThree from './pages/QuizThree';
 import QuizFour from './pages/QuizFour';
 import MakeQuiz from './pages/MakeQuiz';
+import Highscores from './pages/Highscores';
 
 const client = new ApolloClient({
   request: operation => {
@@ -53,6 +54,10 @@ function App() {
           <Route 
                   path="/makeQuiz" 
                   element={<MakeQuiz />}
+          />
+          <Route 
+                  path="/Highscores" 
+                  element={<Highscores />}
           />
           </Routes>
           <Footer />

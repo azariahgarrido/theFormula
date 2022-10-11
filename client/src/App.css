@@ -4,7 +4,7 @@ footer {
     flex-direction: row;
     justify-content: center;
 }
-main {
+.headDiv {
     background-color: red;
 }
 
@@ -14,4 +14,9 @@ main {
     border-style: solid;
     border-color: black;
     border-width: 1px;
+}
+
+.scores {
+    display: flex;
+    flex-direction: column;
 }
