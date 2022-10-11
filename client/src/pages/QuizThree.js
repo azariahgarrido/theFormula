@@ -54,8 +54,10 @@ export default function QuizThree() {
 			setCurrentQuestion(nextQuestion);
 		} else {
 			setShowScore(true);
+			localStorage.setItem('Quiz Three', score);
 		}
 	};
+
 	return (
 		<div className='quizThree'>
 			{showScore ? (

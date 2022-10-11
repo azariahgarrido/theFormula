@@ -72,9 +72,10 @@ export default function QuizTwo() {
 			setCurrentQuestion(nextQuestion);
 		} else {
 			setShowScore(true);
-            // saveScore();
+			localStorage.setItem('Quiz Four', score);
 		}
 	};
+
 	return (
 		<div className='quizTwo'>
 			{showScore ? (

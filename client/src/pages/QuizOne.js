@@ -72,9 +72,10 @@ export default function QuizOne() {
 			setCurrentQuestion(nextQuestion);
 		} else {
 			setShowScore(true);
-            // saveScore();
+			localStorage.setItem('Quiz One', score);
 		}
 	};
+
 	return (
 		<div className='quizOne'>
 			{showScore ? (

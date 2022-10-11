@@ -54,7 +54,7 @@ export default function QuizTwo() {
 			setCurrentQuestion(nextQuestion);
 		} else {
 			setShowScore(true);
-            // saveScore();
+			localStorage.setItem('Quiz Two', score);
 		}
 	};
 	return (
