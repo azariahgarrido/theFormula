@@ -20,3 +20,23 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
+.yourQuiz {
+    display: flex;
+    flex-direction: row;
+}
+
+.quizOne {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+.quizTwo {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
