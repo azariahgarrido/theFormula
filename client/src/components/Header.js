@@ -35,22 +35,6 @@ export default function Header() {
         navigate('/Highscores');
     };
 
-    const checkLoginForOne = () => {
-        {Auth.loggedIn() ? navigateToQuizOne() : setShowModal(true)};
-    };
-
-    const checkLoginForTwo = () => {
-        {Auth.loggedIn() ? navigateToQuizTwo() : setShowModal(true)};
-    };
-
-    const checkLoginForThree = () => {
-        {Auth.loggedIn() ? navigateToQuizThree() : setShowModal(true)};
-    };
-
-    const checkLoginForFour = () => {
-        {Auth.loggedIn() ? navigateToQuizFour() : setShowModal(true)};
-    };
-
     const checkLogin = () => {
         {Auth.loggedIn() ? navigateToMakeQuiz() : setShowModal(true)};
     };
@@ -72,10 +56,10 @@ export default function Header() {
                     </div>
                 )}
                 <div>
-                    <button className = "home" onClick={checkLoginForOne}>Quiz One</button>
-                    <button className = "home" onClick={checkLoginForTwo}>Quiz Two</button>
-                    <button className = "home" onClick={checkLoginForThree}>Quiz Three</button>
-                    <button className = "home" onClick={checkLoginForFour}>Quiz Four</button>
+                    <button className = "home" onClick={navigateToQuizOne}>Quiz One</button>
+                    <button className = "home" onClick={navigateToQuizTwo}>Quiz Two</button>
+                    <button className = "home" onClick={navigateToQuizThree}>Quiz Three</button>
+                    <button className = "home" onClick={navigateToQuizFour}>Quiz Four</button>
                 </div>
             </div>
             {/* set modal data up */}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Auth from '../utils/auth';
 
 export default function QuizOne() {
 	const questions = [
@@ -76,12 +77,24 @@ export default function QuizOne() {
 		}
 	};
 
+	const checkLogin = () => {
+		return (
+			<div>
+				{Auth.loggedIn() ? (
+					<div className='score-section'>
+							You scored {score} out of {questions.length}
+					</div>
+				) : (
+					<div>Login to see your score</div>
+				)}
+			</div>
+		);
+	}
+
 	return (
 		<div className='quizOne'>
 			{showScore ? (
-				<div className='score-section'>
-					You scored {score} out of {questions.length}
-				</div>
+				checkLogin()
 			) : (
 				<>
 					<div className='question-section'>
