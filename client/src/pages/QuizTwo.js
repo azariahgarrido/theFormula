@@ -37,8 +37,28 @@ export default function QuizTwo() {
 				{ answerText: 'Making Money', isCorrect: false },
 				{ answerText: 'Krabby Patties', isCorrect: false },
 				{ answerText: 'The Secret Formula', isCorrect: true },
+				
 			],
+			
+				questionText: 'Who is the main character?',
+				answerOptions: [
+					{ answerText: 'Patrick', isCorrect: false },
+					{ answerText: 'Squidward', isCorrect: false },
+					{ answerText: 'Spongebob', isCorrect: true },
+					{ answerText: 'Mr. Krabs', isCorrect: false },
+				],
+			},
+			{
+				questionText: 'What color is Spongebob?',
+				answerOptions: [
+					{ answerText: 'Red', isCorrect: false },
+					{ answerText: 'Yellow', isCorrect: true },
+					{ answerText: 'Orange', isCorrect: false },
+					{ answerText: 'Green', isCorrect: false },
+				],
+			
 		},
+		
 	];
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
