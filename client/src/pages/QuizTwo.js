@@ -60,9 +60,9 @@ export default function QuizTwo() {
 		{
 			questionText: 'According to Spongbob & Patrick, what is funnier that "24"?',
 			answerOptions: [
-				{ answerText: 'The sounds their chairs make', isCorrect: true },
+				{ answerText: 'The sounds their chairs make', isCorrect: false },
 				{ answerText: 'Dumb old Texas', isCorrect: false },
-				{ answerText: '25', isCorrect: false },
+				{ answerText: '25', isCorrect: true },
 			],
 		},
 	];
