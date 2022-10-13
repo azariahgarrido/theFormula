@@ -60,11 +60,30 @@ export default function QuizTwo() {
 		{
 			questionText: 'According to Spongbob & Patrick, what is funnier that "24"?',
 			answerOptions: [
+
 				{ answerText: 'The sounds their chairs make', isCorrect: false },
 				{ answerText: 'Dumb old Texas', isCorrect: false },
 				{ answerText: '25', isCorrect: true },
+        
 			],
+			
+				questionText: 'True or False: Patrick worked at the Krusty Krab',
+				answerOptions: [
+					
+					{ answerText: 'True', isCorrect: true },
+					{ answerText: 'False', isCorrect: false },
+				],
+			},
+			{
+				questionText: 'Spongebob wears a tie?',
+				answerOptions: [
+					{ answerText: 'False', isCorrect: false },
+					{ answerText: 'True', isCorrect: true },
+					
+				],
+			
 		},
+		
 	];
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
