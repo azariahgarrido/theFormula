@@ -1,83 +1,127 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function MakeQuiz() {
-	const questions = [
-		{
-			questionText: 'Who is the main character?',
-			answerOptions: [
-				{ answerText: 'Patrick', isCorrect: false },
-				{ answerText: 'Squidward', isCorrect: false },
-				{ answerText: 'Spongebob', isCorrect: true },
-				{ answerText: 'Mr. Krabs', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'What color is Spongebob?',
-			answerOptions: [
-				{ answerText: 'Red', isCorrect: false },
-				{ answerText: 'Yellow', isCorrect: true },
-				{ answerText: 'Orange', isCorrect: false },
-				{ answerText: 'Green', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'Where does Spongebob work?',
-			answerOptions: [
-				{ answerText: 'Krusty Krab', isCorrect: true },
-				{ answerText: 'Chum Bucket', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Tacobell', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'What is Planktons obsession?',
-			answerOptions: [
-				{ answerText: 'Chum Sticks', isCorrect: false },
-				{ answerText: 'Making Money', isCorrect: false },
-				{ answerText: 'Krabby Patties', isCorrect: false },
-				{ answerText: 'The Secret Formula', isCorrect: true },
-			],
-		},
-	];
+	const navigate = useNavigate();
 
-	const [currentQuestion, setCurrentQuestion] = useState(0);
-	const [showScore, setShowScore] = useState(false);
-	const [score, setScore] = useState(0);
+	const [question, setQuestion] = useState("");
+	const [correctAnswer, setcorrectAnswer] = useState("");
+	const [inCorrectAnswerA, setinCorrectAnswerA] = useState("");
+	const [inCorrectAnswerB, setinCorrectAnswerB] = useState("");
+	const [inCorrectAnswerC, setinCorrectAnswerC] = useState("");
 
-	const handleAnswerOptionClick = (isCorrect) => {
-		if (isCorrect) {
-			setScore(score + 1);
-		}
+	const [questionTwo, setQuestionTwo] = useState("");
+	const [correctAnswerTwo, setcorrectAnswerTwo] = useState("");
+	const [inCorrectAnswerAtwo, setinCorrectAnswerAtwo] = useState("");
+	const [inCorrectAnswerBtwo, setinCorrectAnswerBtwo] = useState("");
+	const [inCorrectAnswerCtwo, setinCorrectAnswerCtwo] = useState("");
 
-		const nextQuestion = currentQuestion + 1;
-		if (nextQuestion < questions.length) {
-			setCurrentQuestion(nextQuestion);
-		} else {
-			setShowScore(true);
-            // saveScore();
-		}
-	};
+	const navigateToYourQuiz = () => {
+        navigate('/YourQuiz');
+    };
+
+	const handleSubmit = () => {
+		navigateToYourQuiz();
+		localStorage.setItem('question', question);
+		localStorage.setItem('correctAnswer', correctAnswer);
+		localStorage.setItem('inCorrectAnswerA', inCorrectAnswerA);
+		localStorage.setItem('inCorrectAnswerB', inCorrectAnswerB);
+		localStorage.setItem('inCorrectAnswerC', inCorrectAnswerC);
+
+		localStorage.setItem('questionTwo', questionTwo);
+		localStorage.setItem('correctAnswerTwo', correctAnswerTwo);
+		localStorage.setItem('inCorrectAnswerAtwo', inCorrectAnswerAtwo);
+		localStorage.setItem('inCorrectAnswerBtwo', inCorrectAnswerBtwo);
+		localStorage.setItem('inCorrectAnswerCtwo', inCorrectAnswerCtwo);
+	}
+  
 	return (
-		<div className='quizTwo'>
-			{showScore ? (
-				<div className='score-section'>
-					You scored {score} out of {questions.length}
-				</div>
-			) : (
-				<>
-					<div className='question-section'>
-						<div className='question-count'>
-							<span>Question {currentQuestion + 1}</span>/{questions.length}
-						</div>
-						<div className='question-text'>{questions[currentQuestion].questionText}</div>
-					</div>
-					<div className='answer-section'>
-						{questions[currentQuestion].answerOptions.map((answerOption) => (
-							<button key={Math.random()} onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
-						))}
-					</div>
-				</>
-			)}
-		</div>
-	);
+		<div>
+			<form className='yourQuiz' onSubmit={handleSubmit}>
+
+
+			<div className='quizOne'>
+				<label>Enter a question:
+				<input
+					type="text" 
+					value={question}
+					onChange={(e) => setQuestion(e.target.value)}
+				/>
+				</label>
+
+				<label>Add a correct answer:
+				<input
+					type="text"
+					value={correctAnswer}
+					onChange={(e) => setcorrectAnswer(e.target.value)}
+				/>
+				</label>
+
+				<label>Add an incorrect answer:
+				<input
+					type="text"
+					value={inCorrectAnswerA}
+					onChange={(e) => setinCorrectAnswerA(e.target.value)}
+				/>
+				</label>
+				<label>Add an incorrect answer:
+				<input
+					type="text"
+					value={inCorrectAnswerB}
+					onChange={(e) => setinCorrectAnswerB(e.target.value)}
+				/>
+				</label>
+				<label>Add an incorrect answer:
+				<input
+					type="text"
+					value={inCorrectAnswerC}
+					onChange={(e) => setinCorrectAnswerC(e.target.value)}
+				/>
+				</label>
+			</div>
+
+
+			<div className='quizTwo'>
+				<label>Enter a question:
+				<input
+					type="text" 
+					value={questionTwo}
+					onChange={(e) => setQuestionTwo(e.target.value)}
+				/>
+				</label>
+
+				<label>Add a correct answer:
+				<input
+					type="text"
+					value={correctAnswerTwo}
+					onChange={(e) => setcorrectAnswerTwo(e.target.value)}
+				/>
+				</label>
+
+				<label>Add an incorrect answer:
+				<input
+					type="text"
+					value={inCorrectAnswerAtwo}
+					onChange={(e) => setinCorrectAnswerAtwo(e.target.value)}
+				/>
+				</label>
+				<label>Add an incorrect answer:
+				<input
+					type="text"
+					value={inCorrectAnswerBtwo}
+					onChange={(e) => setinCorrectAnswerBtwo(e.target.value)}
+				/>
+				</label>
+				<label>Add an incorrect answer:
+				<input
+					type="text"
+					value={inCorrectAnswerCtwo}
+					onChange={(e) => setinCorrectAnswerCtwo(e.target.value)}
+				/>
+				</label>
+			</div>
+			<input type="submit" />
+			</form>
+	  	</div>
+	)
 }

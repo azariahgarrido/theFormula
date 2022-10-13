@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Auth from '../utils/auth';
 
 export default function QuizOne() {
 	const questions = [
@@ -38,6 +39,24 @@ export default function QuizOne() {
 				{ answerText: 'The Secret Formula', isCorrect: true },
 			],
 		},
+		{
+			questionText: 'Where does Mr.Krabs keep his money?',
+			answerOptions: [
+				{ answerText: 'His Matress', isCorrect: true },
+				{ answerText: 'The Bank', isCorrect: false },
+				{ answerText: 'The Chum Bucket', isCorrect: false },
+				{ answerText: 'The Krusty Krab', isCorrect: false },
+			],
+		},
+		{
+			questionText: 'What does spongebob do for fun?',
+			answerOptions: [
+				{ answerText: 'Running', isCorrect: false },
+				{ answerText: 'Swimming', isCorrect: false },
+				{ answerText: 'Cleans The House', isCorrect: false },
+				{ answerText: 'Go Jelly Fishing', isCorrect: true },
+			],
+		},
 	];
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -54,15 +73,28 @@ export default function QuizOne() {
 			setCurrentQuestion(nextQuestion);
 		} else {
 			setShowScore(true);
-            // saveScore();
+			localStorage.setItem('Quiz One', score);
 		}
 	};
+
+	const checkLogin = () => {
+		return (
+			<div>
+				{Auth.loggedIn() ? (
+					<div className='score-section'>
+							You scored {score} out of {questions.length}
+					</div>
+				) : (
+					<div>Login to see your score</div>
+				)}
+			</div>
+		);
+	}
+
 	return (
 		<div className='quizOne'>
 			{showScore ? (
-				<div className='score-section'>
-					You scored {score} out of {questions.length}
-				</div>
+				checkLogin()
 			) : (
 				<>
 					<div className='question-section'>
