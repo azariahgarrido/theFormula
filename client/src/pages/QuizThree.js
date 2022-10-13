@@ -38,6 +38,42 @@ export default function QuizThree() {
 				{ answerText: '8 times', isCorrect: true },
 			],
 		},
+        {
+			questionText: 'What state is Sady Cheeks from?',
+			answerOptions: [
+				{ answerText: 'Kansas', isCorrect: false },
+				{ answerText: 'Texas', isCorrect: true },
+				{ answerText: 'Arkansas', isCorrect: false },
+				{ answerText: 'Tenessee', isCorrect: false },
+			],
+		},
+        {
+			questionText: 'What kind of animal is Mr. Krabs daughter, Pearl?',
+			answerOptions: [
+				{ answerText: 'Walrus', isCorrect: false },
+				{ answerText: 'Whale', isCorrect: true },
+				{ answerText: 'Shark', isCorrect: false },
+				{ answerText: 'Crab', isCorrect: false },
+			],
+		},
+        {
+			questionText: 'What time does Patrick wake up to eat a Krabby Patty?',
+			answerOptions: [
+				{ answerText: '12 AM', isCorrect: false },
+				{ answerText: '1 AM', isCorrect: false },
+				{ answerText: '2 AM', isCorrect: false },
+				{ answerText: '3 AM', isCorrect: true },
+			],
+		},
+        {
+			questionText: 'What animal sound is made in plase of curse words in the episode "Sailor Mouth"?',
+			answerOptions: [
+				{ answerText: 'Seal', isCorrect: false },
+				{ answerText: 'Dolphin', isCorrect: true },
+				{ answerText: 'Whale', isCorrect: false },
+				{ answerText: 'Seagull', isCorrect: false },
+			],
+		},
 	];
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
