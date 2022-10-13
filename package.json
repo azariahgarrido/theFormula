@@ -24,5 +24,8 @@
   "homepage": "https://github.com/azariahgarrido/theFormula#readme",
   "devDependencies": {
     "concurrently": "^7.4.0"
+  },
+  "dependencies": {
+    "react-scripts": "^5.0.1"
   }
 }
