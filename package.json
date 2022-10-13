@@ -4,7 +4,7 @@
   "description": "Quiz",
   "main": "server/server.js",
   "engines": {
-    "node": "14.17.5"
+    "node": "16.15.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
