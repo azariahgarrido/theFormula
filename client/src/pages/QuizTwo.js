@@ -4,12 +4,48 @@ import Auth from '../utils/auth';
 export default function QuizTwo() {
 	const questions = [
 		{
-			questionText: 'Who is the main character?',
+			questionText: 'Who instrument does Squidward play?',
 			answerOptions: [
-				{ answerText: 'Patrick', isCorrect: false },
-				{ answerText: 'Squidward', isCorrect: false },
-				{ answerText: 'Spongebob', isCorrect: true },
-				{ answerText: 'Mr. Krabs', isCorrect: false },
+				{ answerText: 'Flute', isCorrect: false },
+				{ answerText: 'Clarinet', isCorrect: false },
+				{ answerText: 'Didgeridoo', isCorrect: true },
+				{ answerText: 'Saxophone', isCorrect: false },
+			],
+		},
+		{
+			questionText: 'What is the name of Spongebobs pet snail?',
+			answerOptions: [
+				{ answerText: 'Bary', isCorrect: false },
+				{ answerText: 'Terry', isCorrect: false },
+				{ answerText: 'Mary', isCorrect: false },
+				{ answerText: 'Gary', isCorrect: true },
+			],
+		},
+		{
+			questionText: 'What is the name of the boating school teacher?',
+			answerOptions: [
+				{ answerText: 'Mrs. Puff', isCorrect: true },
+				{ answerText: 'Mrs. Fish', isCorrect: false },
+				{ answerText: 'Mrs. Pearl', isCorrect: false },
+				{ answerText: 'Mrs. Sandy', isCorrect: false },
+			],
+		},
+		{
+			questionText: 'What kind of animal is Sandy Cheeks?',
+			answerOptions: [
+				{ answerText: 'Rat', isCorrect: false },
+				{ answerText: 'Squirrel', isCorrect: false },
+				{ answerText: 'Ferret', isCorrect: false },
+				{ answerText: 'Bear', isCorrect: true },
+			],
+		},
+		{
+			questionText: 'What is Planktons first name?',
+			answerOptions: [
+				{ answerText: 'Sheldon', isCorrect: true },
+				{ answerText: 'Eugene', isCorrect: false },
+				{ answerText: 'Brandon', isCorrect: false },
+				{ answerText: 'Samuel', isCorrect: false },
 			],
 		},
 		{
@@ -22,21 +58,11 @@ export default function QuizTwo() {
 			],
 		},
 		{
-			questionText: 'Where does Spongebob work?',
+			questionText: 'According to Spongbob & Patrick, what is funnier that "24"?',
 			answerOptions: [
-				{ answerText: 'Krusty Krab', isCorrect: true },
-				{ answerText: 'Chum Bucket', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Tacobell', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'What is Planktons obsession?',
-			answerOptions: [
-				{ answerText: 'Chum Sticks', isCorrect: false },
-				{ answerText: 'Making Money', isCorrect: false },
-				{ answerText: 'Krabby Patties', isCorrect: false },
-				{ answerText: 'The Secret Formula', isCorrect: true },
+				{ answerText: 'The sounds their chairs make', isCorrect: false },
+				{ answerText: 'Dumb old Texas', isCorrect: false },
+				{ answerText: '25', isCorrect: true },
 			],
 		},
 	];
