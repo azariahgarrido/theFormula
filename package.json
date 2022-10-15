@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Quiz",
   "main": "server/server.js",
-  "engines": {
-    "node": "16.15.1"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js",
@@ -26,6 +23,6 @@
     "concurrently": "^7.4.0"
   },
   "dependencies": {
-    "react-scripts": "^5.0.1"
+    "dotenv": "^16.0.3"
   }
 }
