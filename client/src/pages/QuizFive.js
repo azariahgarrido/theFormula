@@ -4,19 +4,45 @@ import Auth from '../utils/auth';
 export default function QuizFive() {
 	const questions = [
 		{
-			questionText: 'Who is the main character?',
+			questionText: 'does Spongebob live Bikini Bottom?',
 			answerOptions: [
 				{ answerText: 'True', isCorrect: true },
 				{ answerText: 'False', isCorrect: false },
 			],
 		},
+
 		{
-			questionText: 'Who is the main character?',
+			questionText: 'does Spongebob have a pet?',
 			answerOptions: [
 				{ answerText: 'True', isCorrect: true },
 				{ answerText: 'False', isCorrect: false },
 			],
 		},
+
+		{
+			questionText: 'has Spongebob gotten his driver liscena?',
+			answerOptions: [
+				{ answerText: 'True', isCorrect: true },
+				{ answerText: 'False', isCorrect: false },
+			],
+		},
+
+		{
+			questionText: 'does Spongebob have a pet?',
+			answerOptions: [
+				{ answerText: 'True', isCorrect: true },
+				{ answerText: 'False', isCorrect: false },
+			],
+		},
+
+		{
+			questionText: '?',
+			answerOptions: [
+				{ answerText: 'True', isCorrect: true },
+				{ answerText: 'False', isCorrect: false },
+			],
+		},
+		
 	];
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -65,7 +91,7 @@ export default function QuizFive() {
 					</div>
 					<div className='answer-section'>
 						{questions[currentQuestion].answerOptions.map((answerOption) => (
-							<button key={Math.random()} onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
+							<button className='Axel-Button' key={Math.random()} onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
 						))}
 					</div>
 				</>
