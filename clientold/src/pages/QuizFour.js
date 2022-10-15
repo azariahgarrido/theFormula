@@ -93,7 +93,6 @@ export default function QuizFour() {
 
 	return (
 		<div className='quizFour'>
- main
 			{showScore ? (
 				checkLogin()
 			) : (

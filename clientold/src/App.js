@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import ''
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
@@ -10,7 +9,6 @@ import QuizOne from './pages/QuizOne';
 import QuizTwo from './pages/QuizTwo';
 import QuizThree from './pages/QuizThree';
 import QuizFour from './pages/QuizFour';
-import QuizFive from './pages/QuizFive';
 import MakeQuiz from './pages/MakeQuiz';
 import Highscores from './pages/Highscores';
 import YourQuiz from './pages/YourQuiz';
@@ -53,10 +51,6 @@ function App() {
           <Route 
                   path="/QuizFour" 
                   element={<QuizFour />}
-          />
-          <Route 
-                  path="/QuizFive" 
-                  element={<QuizFive />}
           />
           <Route 
                   path="/makeQuiz" 
