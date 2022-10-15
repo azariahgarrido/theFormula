@@ -110,7 +110,7 @@ export default function QuizThree() {
 	}
 
 	return (
-		<div className='quizThree'>
+		<div className='quizThreeStyle'>
 			{showScore ? (
 				checkLogin()
 			) : (

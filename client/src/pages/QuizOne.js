@@ -92,7 +92,7 @@ export default function QuizOne() {
 	}
 
 	return (
-		<div className='quizOne'>
+		<div className='quizOneStyle'>
 			{showScore ? (
 				checkLogin()
 			) : (
