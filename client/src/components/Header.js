@@ -26,6 +26,9 @@ export default function Header() {
     const navigateToQuizFour = () => {
         navigate('/QuizFour');
     };
+    const navigateToQuizFive = () => {
+        navigate('/QuizFive');
+    }; 
 
     const navigateToMakeQuiz = () => {
         navigate('/MakeQuiz');
@@ -60,6 +63,7 @@ export default function Header() {
                     <button className = "home" onClick={navigateToQuizTwo}>Quiz Two</button>
                     <button className = "home" onClick={navigateToQuizThree}>Quiz Three</button>
                     <button className = "home" onClick={navigateToQuizFour}>Quiz Four</button>
+                    <button className = "home" onClick={navigateToQuizFive}>Quiz Five</button>
                 </div>
             </div>
             {/* set modal data up */}
