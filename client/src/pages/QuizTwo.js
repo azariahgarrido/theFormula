@@ -74,7 +74,7 @@ export default function QuizTwo() {
 	}
 
 	return (
-		<div className='quizTwo'>
+		<div className='quizTwoStyle'>
 			{showScore ? (
 				checkLogin()
 			) : (

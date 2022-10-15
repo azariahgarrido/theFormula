@@ -92,7 +92,7 @@ export default function QuizTwo() {
 	}
 
 	return (
-		<div className='quizTwo'>
+		<div className='quizFourStyle'>
 			{showScore ? (
 				checkLogin()
 			) : (
