@@ -16,7 +16,7 @@ export default function QuizThree() {
 			questionText: 'Who is the voice actor for Spongebob?',
 			answerOptions: [
 				{ answerText: 'Clancy Brown', isCorrect: false },
-				{ answerText: 'YRodger Bumpass', isCorrect: false },
+				{ answerText: 'Rodger Bumpass', isCorrect: false },
 				{ answerText: 'Bill Fagerbakke', isCorrect: false },
 				{ answerText: 'Tom Kenny', isCorrect: true },
 			],
@@ -110,7 +110,7 @@ export default function QuizThree() {
 	}
 
 	return (
-		<div className='quizThree'>
+		<div className='quizThreeStyle'>
 			{showScore ? (
 				checkLogin()
 			) : (

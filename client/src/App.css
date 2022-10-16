@@ -30,7 +30,7 @@ footer {
     display: flex;
     flex-direction: column;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(0, 0, 0);
     border-width: 1px;
 }
 .quizTwo {
@@ -39,4 +39,11 @@ footer {
     border-style: solid;
     border-color: black;
     border-width: 1px;
+}
+.Axel-Button {
+    background-color: blue;
+}
+.Axel-Button::after {
+    background-color: rgb(0, 255, 55);
+    transition-duration: 50%;
 }

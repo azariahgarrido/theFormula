@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Auth from '../utils/auth';
 
-export default function QuizTwo() {
+export default function QuizFour() {
 	const questions = [
 		{
 			questionText: 'What is Spongebobs house?',
@@ -92,7 +92,7 @@ export default function QuizTwo() {
 	}
 
 	return (
-		<div className='quizTwo'>
+		<div className='quizFour'>
 			{showScore ? (
 				checkLogin()
 			) : (

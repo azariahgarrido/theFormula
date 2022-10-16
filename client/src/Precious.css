@@ -1,0 +1,97 @@
+.quizOneStyle {
+    /* font-family: ; */
+    /* background-image: url(./assets/sbhome.jpg); */
+    background: linear-gradient(-45deg, rgb(0, 225, 255), #0306bd, #7102a5, #ce1b7d);
+    animation: gradient 5s ease infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+
+.quizTwoStyle {
+    /* font-family: bikini bottom themed - yep file - help; */
+    /* background-image: url(./assets/bknibackg.jpg); */
+    background: linear-gradient(-45deg, rgb(0, 225, 255), #0306bd, #7102a5, #ce1b7d);
+    animation: gradient 5s ease infinite;
+    background-size: 400% 400%;
+}
+
+.quizThreeStyle {
+    /* font-family: ; */
+    /* background-image: url(./assets/blob.jpeg); */
+    background: linear-gradient(-45deg, rgb(0, 225, 255), #0306bd, #7102a5, #ce1b7d);
+    animation: gradient 5s ease infinite;
+    background-size: 400% 400%;
+}
+
+.quizFour {
+    /* font-family: ; */
+    /* background-image: url(./assets/bknibackg.jpg); */
+    background: linear-gradient(-45deg, rgb(0, 225, 255), #0306bd, #7102a5, #ce1b7d);
+    animation: gradient 5s ease infinite;
+    background-size: 400% 400%;
+}
+
+.quizFive {
+    background: linear-gradient(-45deg, rgb(0, 225, 255), #0306bd, #7102a5, #ce1b7d);
+    animation: gradient 5s ease infinite;
+    background-size: 400% 400%;
+}
+
+.question-text {
+    color: white;
+}
+
+.question-count {
+    color: white;
+}
+
+button:hover {
+    color: red;
+}
+
+.question-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.highscores {
+    background: linear-gradient(-45deg, rgb(0, 225, 255), #0306bd, #7102a5, #ce1b7d);
+    animation: gradient 5s ease infinite;
+    background-size: 400% 400%;
+    color: white;
+}
+
+.yourQuiz {
+    background: linear-gradient(-45deg, rgb(0, 225, 255), #0306bd, #7102a5, #ce1b7d);
+    animation: gradient 5s ease infinite;
+    background-size: 400% 400%;
+    color: white;
+}
+
+.inputSubmit {
+    background-color: red;
+    color: white;
+}
+.inputSubmit:hover {
+    background-color: blue;
+}
