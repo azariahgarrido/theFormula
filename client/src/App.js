@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-//import ''
+import './Precious.css'
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';

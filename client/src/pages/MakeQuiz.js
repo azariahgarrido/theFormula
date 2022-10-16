@@ -120,7 +120,7 @@ export default function MakeQuiz() {
 				/>
 				</label>
 			</div>
-			<input type="submit" />
+			<input className='inputSubmit' type="submit" />
 			</form>
 	  	</div>
 	)
