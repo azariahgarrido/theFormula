@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://azariahgarrido:softwareEngineer4869@cluster0.vcm7lvv.mongodb.net/theFormula?retryWrites=true&w=majority', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/theFormula', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
