@@ -49,7 +49,7 @@ export default function YourQuiz() {
             setCurrentQuestion(nextQuestion);
         } else {
             setShowScore(true);
-            localStorage.setItem('Quiz One', score);
+            localStorage.setItem('YourQuiz', score);
         }
     };
 

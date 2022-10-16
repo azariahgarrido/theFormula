@@ -4,14 +4,35 @@ import Auth from '../utils/auth';
 export default function QuizFive() {
 	const questions = [
 		{
-			questionText: 'Who is the main character?',
+			questionText: 'Is Spongebob the main character?',
 			answerOptions: [
 				{ answerText: 'True', isCorrect: true },
 				{ answerText: 'False', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'Who is the main character?',
+			questionText: 'Does he ever graduate boating school?',
+			answerOptions: [
+				{ answerText: 'Yes', isCorrect: true },
+				{ answerText: 'No', isCorrect: false },
+			],
+		},
+		{
+			questionText: 'Spongebob dreams of krabby patties?',
+			answerOptions: [
+				{ answerText: 'True', isCorrect: true },
+				{ answerText: 'False', isCorrect: false },
+			],
+		},
+		{
+			questionText: 'Would you like a chum stick?',
+			answerOptions: [
+				{ answerText: 'No', isCorrect: true },
+				{ answerText: 'Yes', isCorrect: false },
+			],
+		},
+		{
+			questionText: 'Patrick lives under a rock?',
 			answerOptions: [
 				{ answerText: 'True', isCorrect: true },
 				{ answerText: 'False', isCorrect: false },
