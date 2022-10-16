@@ -10,6 +10,31 @@ export default function QuizFive() {
 				{ answerText: 'False', isCorrect: false },
 			],
 		},
+
+		{
+			questionText: 'does Spongebob have a pet?',
+			answerOptions: [
+				{ answerText: 'True', isCorrect: true },
+				{ answerText: 'False', isCorrect: false },
+			],
+		},
+
+		{
+			questionText: 'has Spongebob gotten his driver liscena?',
+			answerOptions: [
+				{ answerText: 'True', isCorrect: true },
+				{ answerText: 'False', isCorrect: false },
+			],
+		},
+
+		{
+			questionText: 'does Spongebob have a pet?',
+			answerOptions: [
+				{ answerText: 'True', isCorrect: true },
+				{ answerText: 'False', isCorrect: false },
+			],
+		},
+
 		{
 			questionText: 'Does he ever graduate boating school?',
 			answerOptions: [
@@ -33,11 +58,13 @@ export default function QuizFive() {
 		},
 		{
 			questionText: 'Patrick lives under a rock?',
+			questionText: '?',
 			answerOptions: [
 				{ answerText: 'True', isCorrect: true },
 				{ answerText: 'False', isCorrect: false },
 			],
 		},
+		
 	];
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -86,7 +113,7 @@ export default function QuizFive() {
 					</div>
 					<div className='answer-section'>
 						{questions[currentQuestion].answerOptions.map((answerOption) => (
-							<button key={Math.random()} onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
+							<button className='Axel-Button' key={Math.random()} onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
 						))}
 					</div>
 				</>
